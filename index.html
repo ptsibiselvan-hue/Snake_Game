@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🐍 Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🐍 Snake Game</h2>
+  <div id="scoreboard">Score: 0 | High Score: 0</div>
+  <canvas id="game" width="400" height="400"></canvas>
+
+  <!-- Controls -->
+
+  <div id="controls">
+    <button onclick="newGame()">New Game</button>
+  </div>
+
+  <!-- Game Over Overlay -->
+
+  <div id="overlay">
+    <h3>Game Over!</h3>
+    <p id="finalScore"></p>
+    <button onclick="newGame()">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
